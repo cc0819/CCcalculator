@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="100dp"
         android:background="#333333"
         android:orientation="vertical">
 
@@ -18,18 +18,15 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="2"
-            android:gravity="right"
+            android:gravity="right|bottom"
+            android:text="0"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@android:color/white"
             android:textIsSelectable="true"
-            android:textSize="30sp" />
+            android:textSize="50sp" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/answer_window"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="fill_parent"-->
-            <!--android:layout_weight="3"-->
-            <!--android:gravity="right"-->
-            <!--android:textIsSelectable="true"-->
-            <!--android:textSize="30sp" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -45,7 +42,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/left_bracket_button"
+                android:id="@+id/clear_button"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -54,11 +51,10 @@
                 android:layout_weight="1"
                 android:background="#cacbcd"
                 android:text="AC"
-                android:textColor="@android:color/white"
                 android:textSize="35sp" />
 
             <Button
-                android:id="@+id/right_bracket_button"
+                android:id="@+id/plusorminus_button"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -66,12 +62,11 @@
                 android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="#cacbcd"
-                android:text="@string/right_bracket"
-                android:textColor="@android:color/white"
+                android:text="+/-"
                 android:textSize="35sp" />
 
             <Button
-                android:id="@+id/divisor_button"
+                android:id="@+id/percent_button"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -79,12 +74,11 @@
                 android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="#cacbcd"
-                android:text="@string/divisor"
-                android:textColor="@android:color/white"
+                android:text="%"
                 android:textSize="35sp" />
 
             <Button
-                android:id="@+id/clear_button"
+                android:id="@+id/division_button"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"
                 android:gravity="center"
@@ -92,7 +86,8 @@
                 android:layout_marginLeft="1px"
                 android:layout_weight="1"
                 android:background="#f99113"
-                android:text="@string/backspace"
+                android:textColor="@android:color/white"
+                android:text="÷"
                 android:textSize="35sp" />
         </LinearLayout>
 

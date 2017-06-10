@@ -198,7 +198,7 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:background="#f99113"
-                android:text="@string/minus"
+                android:text="—"
                 android:textColor="@android:color/white"
                 android:textSize="35sp" />
         </LinearLayout>
